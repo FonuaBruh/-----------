@@ -1,0 +1,61 @@
+body {
+    background-color: #10161f;
+
+    font-family: Roboto;
+}
+
+:root {
+    --textGray: #8994a3;
+    --blueRadialGradient: radial-gradient(circle,#0098ea 0%,#1ac9ff 30%,rgba(26,201,255,.3) 50%,hsla(0,0%,100%,0) 100%);
+    --grayGradient: linear-gradient(90deg,transparent,#1d2633 50%,transparent);
+    --backgroundContent: #1d2633;
+}
+
+.nav-link {
+    color: var(--textGray);
+    font-family: Roboto;
+}
+
+.nav-link:hover {
+    color: var(--textGray) !important;
+}
+
+.gradient {
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+    aspect-ratio: 1 / 1;
+    width: 200%;
+    height: auto;
+    border-radius: 100%;
+    background: var(--blueRadialGradient);
+    filter: blur(50px);
+    top: -25%;
+    left: -50%;
+    z-index: -1 !important; 
+    transform: translateY(-80%);
+}
+
+h3, p {
+    color: var(--textGray);
+}
+
+.line {
+    height: 1px;
+    background: var(--grayGradient);
+    padding: 0 24px;
+}
+
+.card {
+    background-color: var(--backgroundContent);
+    border-radius: 35px;
+}
+
+.main-card {
+    background-color: transparent;
+}
+
+.card-img-top {
+    border-radius: 15px;
+}
