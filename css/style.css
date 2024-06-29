@@ -1,6 +1,11 @@
+html, body {
+    height: 100%;
+}
+
+
 body {
     background-color: #10161f;
-
+    min-width: 320px;
     font-family: Roboto;
 }
 
@@ -58,4 +63,15 @@ h3, p {
 
 .card-img-top {
     border-radius: 15px;
+}
+
+.f-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.f-nav-links {
+    display: flex;
+    flex-direction: column;
 }
